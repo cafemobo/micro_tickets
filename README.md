@@ -17,3 +17,17 @@ server.js	- Archivo de configuración principal
 servicio.yml	- Archivo de servicio
 
 ticket.js - Archivo de variables y despliegue
+
+
+
+# USO:
+
+Localmente se puede validar el microservicio de la sigueinte manera:
+
+- Registro de queja
+
+curl -X PUT http://127.0.0.1:9999/tickets/1 -d "cliente=Lument: Se queja por los altos costos de los bombillos"
+
+- Consulta de queja:
+
+curl -X GET http://127.0.0.1:9999/tickets/1
